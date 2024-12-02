@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle-checkbox" />
+      <span class="slider round">
+        <!-- <i class="fas fa-sun sun-icon"></i> -->
+        <span class="sun-icon">🌞</span>
+        <!-- <i class="fa-solid fa-sun sun-icon" style="color: #FDB813;"></i> -->
+        <i class="fa-solid fa-moon moon-icon  " style="color: #fff;"></i>
+      </span>
+    </label>
+  </div>
+  
+  <!-- To-Do Container -->
+  <div class="todo-container">
+    <h1>📝 To-Do List</h1>
+    <p class="subtext">Stay organized and on top of your tasks.</p>
+    <div class="todo-input-container">
+      <input type="text" id="todo-input" placeholder="Enter your task..." />
+      <input type="datetime-local" id="todo-datetime" />
+      <button id="add-task-btn">
+        <i class="fas fa-plus"></i> Add Task
+      </button>
+    </div>
+    <ul id="todo-list"></ul>
+  </div>
+  
+  <!-- Custom Popup -->
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span id="popup-close-btn" class="popup-close-btn">&times;</span>
+      <p id="popup-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
